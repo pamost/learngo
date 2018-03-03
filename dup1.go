@@ -14,6 +14,10 @@ func main() {
 
 	for input.Scan() {
 		if input.Text() == "" { break }
+
+		//[input.Text()]++ эквивалентна следующим двум инструкциям:
+		//line := input.Text()
+		//counts[line] = counts[line] + 1
 		counts[input.Text()]++
 	}
 	fmt.Println(counts)
