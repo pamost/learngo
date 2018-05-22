@@ -1,5 +1,7 @@
 // Dup1 prints the text of each line that appears more than
 // once in the standard input, preceded by its count.
+// Сканер остановится на EOF (конец файла). Или набрав Ctrl-D, сканер остановится.
+
 package main
 
 import (
@@ -13,8 +15,7 @@ func main() {
 	input := bufio.NewScanner(os.Stdin)
 
 	for input.Scan() {
-		if input.Text() == "" { break }
-
+		//if input.Text() == "" { break }
 		//[input.Text()]++ эквивалентна следующим двум инструкциям:
 		//line := input.Text()
 		//counts[line] = counts[line] + 1
