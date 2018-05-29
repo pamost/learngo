@@ -3,31 +3,23 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"net/http"
 	"os"
 	"strings"
 )
 
 func main() {
-	u := []string{"golang.org", "http://megaweb.kz"}
+	u := []string{"golang.org", "http://megaweb.kz", "smartgadget.kz"}
 	for _, url := range u[0:] {
-
-		resp, err := http.Get(checkUrl8ex(url))
+		resp, err := http.Get(checkUrl9ex(url))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
 		}
-
-		if _, err := io.Copy(os.Stdout, resp.Body); err != nil {
-			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
-			os.Exit(1)
-		}
-
-		resp.Body.Close()
+		fmt.Println(resp.Status)
 	}
 }
 
-func checkUrl8ex(url string) string {
+func checkUrl9ex(url string) string {
 	prefixUrl := "http://"
 
 	if strings.HasPrefix(url, prefixUrl) {
