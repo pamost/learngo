@@ -1,0 +1,28 @@
+2018-05-31 14:23:28
+0.64s      35 http://megaweb.kz
+1.17s   11152 http://google.com
+1.23s   63911 http://smartgadget.kz
+3.90s    8451 http://golang.org
+
+
+2018-05-31 14:23:34
+0.77s      35 http://megaweb.kz
+1.43s   11151 http://google.com
+2.09s   63911 http://smartgadget.kz
+3.95s    8451 http://golang.org
+
+
+2018-05-31 14:23:44
+0.43s      35 http://megaweb.kz
+0.46s   11129 http://google.com
+0.80s   63911 http://smartgadget.kz
+6.75s    8451 http://golang.org
+
+
+2018-05-31 14:24:23
+0.46s      35 http://megaweb.kz
+0.48s   11156 http://google.com
+0.84s   63911 http://smartgadget.kz
+5.29s    8451 http://golang.org
+
+
